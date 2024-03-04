@@ -8,12 +8,12 @@ install:
 
 before_script:
   - python manage.py migrate
-  - python manage.py collectstatic --noinput
+#  - python manage.py collectstatic --noinput
 
 script:
   - black --check .
   - flake8 .
-  - coverage run --source=mysite_swe1_app,polls manage.py test
+  - coverage run --source=eddjango,polls manage.py test
 
 after_script:
   - coveralls
