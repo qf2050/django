@@ -22,9 +22,9 @@ after_script:
 deploy:
   provider: elasticbeanstalk
   access_key_id:
-    secure: "Encrypted <access-key-id>=AKIAXYKJVI5AJZPLUGNO"
+    secure: "AKIAXYKJVI5AJZPLUGNO"
   secret_access_key:
-    secure: "Encypted <secret-access-key>=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"
+    secure: "ta03HkCTITYqOs+b3cphshAUifquF6HqxzuU87WU"
   region: "us-west-2"
   app: "django"
   env: "django-env"
