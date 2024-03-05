@@ -15,17 +15,17 @@ script:
   - flake8 .
   - coverage run --source=eddjango,polls manage.py test
 
-after_script:
+#after_script:
 #  - coveralls
 #rvm:
 # - 2.2
-deploy:
-  provider: elasticbeanstalk
-  access_key_id:
-    secure: "AKIAXYKJVI5AJZPLUGNO"
-  secret_access_key:
-    secure: "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"
-  region: "us-west-2"
-  app: "django"
-  env: "django-env"
-  bucket_name: "the-target-S3-bucket"
+#deploy:
+#  provider: elasticbeanstalk
+#  access_key_id:
+#    secure: "AKIAXYKJVI5AJZPLUGNO"
+#  secret_access_key:
+#    secure: "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"
+#  region: "us-west-2"
+#  app: "django"
+#  env: "django-env"
+#  bucket_name: "the-target-S3-bucket"
